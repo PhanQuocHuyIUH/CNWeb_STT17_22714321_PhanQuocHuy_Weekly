@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IUH</title>
+    <style>
+      div,
+      ul {
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        max-width: 95%;
+        background-color: white;
+      }
+
+      .header {
+        display: flex;
+        width: 1200px;
+        height: 100%;
+      }
+      .content {
+        width: 1200px;
+        height: 440px;
+        background-color: bisque;
+      }
+      .footer {
+        display: flex;
+        width: 1200px;
+        height: 100px;
+        background-color: cornflowerblue;
+      }
+      .nav {
+        width: 1200px;
+        height: 100%;
+      }
+
+      .nav ul {
+        background-color: grey;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        list-style: none;
+      }
+
+      .nav ul li {
+        display: flex;
+        position: relative;
+        /* margin-right: 30px; */
+      }
+      .nav li a {
+        display: flex;
+        padding: 20px;
+        text-decoration-line: none;
+        color: black;
+      }
+      .nav li:hover,
+      .sub-menu li:hover {
+        background-color: aqua;
+      }
+      li:hover .sub-menu {
+        display: flex;
+        flex-direction: column;
+      }
+      ul .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        background-color: grey;
+      }
+      .sub-menu ul li {
+        display: flex;
+        align-items: center;
+      }
+      .sub-menu li a {
+        padding: 28px;
+      }
+
+      li:hover > a {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img src="./header.PNG" alt="header" width="1200px" />
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="">
+            <a href="">TUTORIAL</a>
+          </li>
+          <li>
+            <a href="">ACADEMIC</a>
+          </li>
+          <li>
+            <a href="">LIBRARY</a>
+          </li>
+          <li>
+            <a href="">CATEGORY</a>
+            <ul class="sub-menu">
+              <li><a href="">ENGLISH</a></li>
+              <li><a href="">FINANCE</a></li>
+              <li><a href="">CNTT&AI</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">ABOUT US</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content"></div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
